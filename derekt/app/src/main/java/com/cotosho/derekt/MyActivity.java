@@ -26,7 +26,7 @@ public class MyActivity extends Activity {
 
         @Override
         public void onClick(View v) {
-            Intent i = new Intent(getApplication(), ResultsScreen.class);
+            Intent i = new Intent(getApplication(), GameOnScreen.class);
             startActivity(i);
         }
     }

@@ -20,6 +20,18 @@
             android:name=".ResultsScreen"
             android:label="@string/title_activity_results_screen" >
         </activity>
+        <activity
+            android:name=".GameOnScreen"
+            android:label="@string/title_activity_game_on_screen" >
+        </activity>
+        <activity
+            android:name=".GameOverScreen"
+            android:label="@string/title_activity_game_over_screen" >
+        </activity>
+        <activity
+            android:name=".GameWonScreen"
+            android:label="@string/title_activity_game_won_screen" >
+        </activity>
     </application>
 
 </manifest>
