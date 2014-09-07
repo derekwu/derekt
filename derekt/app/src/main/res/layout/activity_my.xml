@@ -8,8 +8,22 @@
         android:id="@+id/getRekt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/icon"
+        android:src="@drawable/start_button"
         android:background="#363636"
         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/instructions"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/stats_button"/>
+
 
 </RelativeLayout>
