@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class MyActivity extends Activity {
@@ -15,12 +16,18 @@ public class MyActivity extends Activity {
         setContentView(R.layout.activity_my);
 
         ImageButton rektButton = (ImageButton) findViewById(R.id.getRekt);
-        rektButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(getApplication(), ResultsScreen.class);
-                startActivity(in);
-            }
-        });
+        ImageView dontTouch = (ImageView) findViewById(R.id.dontTouch);
+        ButtonListener bl = new ButtonListener();
+        rektButton.setOnClickListener(bl);
+        dontTouch.setOnClickListener(bl);
+    }
+
+    private class ButtonListener implements View.OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplication(), ResultsScreen.class);
+            startActivity(i);
+        }
     }
 }
